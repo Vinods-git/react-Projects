@@ -14,5 +14,37 @@
   		"$2"
   	],
   	"description": "Log output to console"
+  },
+  "react": {
+  	"scope": "javascript,typescript",
+  	"prefix": "ir",
+  	"body": [
+  		"import React from 'react;",
+  	],
+  	"description": "Log output to console"
+  },
+  "class snippet": {
+  	"scope": "javascript,typescript",
+  	"prefix": "clss",
+  	"body": [
+  		"import React from 'react'",
+
+"class $1 extends React.Component{",
+"constructor(props){",
+ "super(props);",
+"this.state={}",
+
+"}",
+"render(){",
+
+   " return <>Regular Component {this.props.name}</>",
+"}",
+
+"}",
+
+"export default $1",
+
+  	],
+  	"description": "class snippet"
   }
 }
