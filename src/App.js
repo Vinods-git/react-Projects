@@ -6,13 +6,12 @@ import Counter from './Counter';
 import ClickCounterTwo from './ClickCounterTwo';
 import HoverCounterTwo from './HoverCounterTwo';
 import CompA from './CompA';
-import ApiReq from './ApiReq'
+import ApiReq from './ApiReq';
+import MousePosition from './MousePosition';
 
 class App extends React.Component {
   render() {
-    return (
-      <ApiReq/>
-    );
+    return <MousePosition />;
   }
 }
 
