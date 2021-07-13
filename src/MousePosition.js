@@ -4,13 +4,19 @@ const MousePosition = props => {
   const [x, setX] = useState('');
   const [y, setY] = useState('');
   const positionHandler = e => {
+    console.log('mouseEvenr');
+    
     setX(e.clientX);
-    setX(e.clientY);
+    setY(e.clientY);
   };
   useEffect(() => {
     console.log('position is started');
-    document.addEventListener('mousemove', positionHandler);
-  });
+    window.addEventListener('mousemove', positionHandler);
+    return () => {
+      console.log('position is stopped');
+      window.removeEventListener('mousemove', positionHandler);
+    };
+  }, []);
 
   return (
     <>
