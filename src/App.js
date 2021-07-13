@@ -8,10 +8,11 @@ import HoverCounterTwo from './HoverCounterTwo';
 import CompA from './CompA';
 import ApiReq from './ApiReq';
 import MousePosContainer from './MousePosContainer';
+import DataFetch2 from './DataFetch2';
 
 class App extends React.Component {
   render() {
-    return <MousePosContainer />;
+    return <DataFetch2 />;
   }
 }
 

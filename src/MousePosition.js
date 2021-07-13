@@ -4,8 +4,8 @@ const MousePosition = props => {
   const [x, setX] = useState('');
   const [y, setY] = useState('');
   const positionHandler = e => {
-    console.log('mouseEvenr');
-    
+    console.log('mouseEvent');
+
     setX(e.clientX);
     setY(e.clientY);
   };
