@@ -11,17 +11,12 @@ import MousePosContainer from './MousePosContainer';
 import DataFetch2 from './DataFetch2';
 import UseContext from './UseContext';
 import UseReducer from './UseReducer';
+import ReducerContext from './ReducerContext';
 export const UserContext = React.createContext('vinod');
 export const ChannelContext = React.createContext('Doly');
 class App extends React.Component {
   render() {
-    return (
-      <UserContext.Provider value="polys">
-        <ChannelContext.Provider value="Chomu">
-          <UseReducer />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
-    );
+    return <ReducerContext />;
   }
 }
 
