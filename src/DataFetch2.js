@@ -27,7 +27,7 @@ const DataFetch2 = props => {
     <>
       <input value={id} onChange={inputHandler} />
       <button onClick={buttonHandler}>buttonHandler</button>
-      {posts && <div>{posts.title}</div>}
+      {posts ? <div>{posts.title}</div> : <div>{}</div>}
     </>
   );
 };
