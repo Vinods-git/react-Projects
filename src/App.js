@@ -12,11 +12,12 @@ import DataFetch2 from './DataFetch2';
 import UseContext from './UseContext';
 import UseReducer from './UseReducer';
 import ReducerContext from './ReducerContext';
+import FetchDataUseReducer from './FetchDataUseReducer';
 export const UserContext = React.createContext('vinod');
 export const ChannelContext = React.createContext('Doly');
 class App extends React.Component {
   render() {
-    return <ReducerContext />;
+    return <FetchDataUseReducer />;
   }
 }
 
