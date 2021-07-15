@@ -12,12 +12,17 @@ import DataFetch2 from './DataFetch2';
 import UseContext from './UseContext';
 import UseReducer from './UseReducer';
 import ReducerContext from './ReducerContext';
+import DocTitleOne from './DocTitleOne';
+import DocTitleTwo from './DocTitleTwo';
 import FetchDataUseReducer from './FetchDataUseReducer';
+import CounterOne from './CounterOne';
+import CounterTwo from './CounterTwo';
+import UserForm from './UserForm';
 export const UserContext = React.createContext('vinod');
 export const ChannelContext = React.createContext('Doly');
 class App extends React.Component {
   render() {
-    return <FetchDataUseReducer />;
+    return <>VInod</>;
   }
 }
 
